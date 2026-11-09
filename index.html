@@ -767,7 +767,7 @@
             height: 100%;
             object-fit: cover;
             object-position: center center;
-            opacity: 0.95;
+            opacity: 1;
             animation: slowAtmosphericZoom 30s ease-in-out infinite alternate;
         }
 
@@ -780,21 +780,27 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(90deg, 
-                rgba(16, 16, 16, 0.95) 0%, 
-                rgba(16, 16, 16, 0.86) 38%, 
-                rgba(16, 16, 16, 0.38) 68%, 
-                rgba(16, 16, 16, 0.12) 100%
+                rgba(16, 16, 16, 0.82) 0%, 
+                rgba(16, 16, 16, 0.62) 38%, 
+                rgba(16, 16, 16, 0.25) 68%, 
+                rgba(16, 16, 16, 0.05) 100%
             );
             z-index: 1;
         }
 
         @media (max-width: 768px) {
             .hero-vignette-veil {
-                background: linear-gradient(180deg, 
-                    rgba(16, 16, 16, 0.94) 0%, 
-                    rgba(16, 16, 16, 0.82) 45%, 
-                    rgba(16, 16, 16, 0.65) 100%
+                background: radial-gradient(circle at center 42%, 
+                    rgba(16, 16, 16, 0.2) 0%, 
+                    rgba(16, 16, 16, 0.45) 55%, 
+                    rgba(16, 16, 16, 0.72) 100%
                 );
+            }
+            .hero-headline-large {
+                text-shadow: 0 4px 24px rgba(0, 0, 0, 0.95), 0 0 40px rgba(0, 0, 0, 0.85);
+            }
+            .hero-sub-paragraph {
+                text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95);
             }
         }
 
@@ -803,8 +809,8 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 160px;
-            background: linear-gradient(to top, var(--color-obsidian) 0%, rgba(16, 16, 16, 0.8) 50%, transparent 100%);
+            height: 120px;
+            background: linear-gradient(to top, var(--color-obsidian) 0%, rgba(16, 16, 16, 0.6) 50%, transparent 100%);
             z-index: 1;
         }
 
@@ -2598,11 +2604,11 @@
 
         /* ─── LUXURY EMERALD / GREEN THEME CAREERS & ALLIANCES SECTION ─── */
         .careers-emerald-section {
-            background: radial-gradient(circle at 18% 28%, rgba(22, 54, 38, 0.42) 0%, rgba(9, 21, 15, 0.98) 70%), #0A1710;
+            background: radial-gradient(circle at 20% 28%, rgba(30, 82, 56, 0.65) 0%, rgba(10, 26, 18, 0.98) 72%), #0C1F15;
             position: relative;
             padding: 7rem 0;
-            border-top: 1px solid rgba(179, 154, 106, 0.22);
-            border-bottom: 1px solid rgba(179, 154, 106, 0.22);
+            border-top: 1px solid rgba(179, 154, 106, 0.25);
+            border-bottom: 1px solid rgba(179, 154, 106, 0.25);
             overflow: hidden;
             color: #EDECE6;
         }
@@ -2614,7 +2620,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 85% 75%, rgba(30, 74, 52, 0.2) 0%, transparent 60%);
+            background: radial-gradient(circle at 85% 75%, rgba(38, 98, 68, 0.25) 0%, transparent 60%);
             pointer-events: none;
         }
 
@@ -2737,8 +2743,8 @@
         }
 
         .role-card-item {
-            background: #0E1F16;
-            border: 1px solid rgba(179, 154, 106, 0.22);
+            background: #12281D;
+            border: 1px solid rgba(179, 154, 106, 0.28);
             border-radius: 3px;
             padding: 1.75rem 2.25rem;
             display: flex;
