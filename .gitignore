@@ -8,5 +8,6 @@ Thumbs.db
 
 # Local assets
 *.log
+*.backup.html
 .vercel
 omniide-vision/
